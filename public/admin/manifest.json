@@ -1,0 +1,25 @@
+{
+  "resources/views/admin/main.css": {
+    "file": "assets/main-b99495fa.css",
+    "src": "resources/views/admin/main.css"
+  },
+  "resources/views/admin/pages/admin.vue": {
+    "file": "assets/admin-1e623245.js",
+    "src": "resources/views/admin/pages/admin.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/views/admin/main.ts"
+    ]
+  },
+  "resources/views/admin/main.ts": {
+    "file": "assets/main-2f47ef7b.js",
+    "src": "resources/views/admin/main.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/views/admin/pages/admin.vue"
+    ],
+    "css": [
+      "assets/main-b99495fa.css"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "scripts": {
+        "dev:admin": "vite --config vite.admin.config.ts",
+        "build:admin": "vite build --config vite.admin.config.ts  --outDir ./public/admin",
+        "build:admin-ssr": "vite build  --ssr --config vite.admin.config.ts --outDir ./public/admin/server",
+        "admin:serve" : "npm run build:admin && npm run build:admin-ssr",
+
+        "dev:client": "vite --config vite.client.config.ts",
+        "build:client": "vite build --config vite.client.config.ts  --outDir ./public/client",
+        "build:client-ssr": "vite build  --ssr --config vite.client.config.ts --outDir ./public/client/server",
+        "client:serve" : "npm run build:client && npm run build:client-ssr"
+    },
+    "dependencies": {
+        "@inertiajs/vue3": "^1.0.0",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "@vue/server-renderer": "^3.2.31",
+        "laravel-vite-plugin": "^0.7.2",
+        "vite": "^4.0.0",
+        "vue": "^3.2.41"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.18",
+        "@vue/compiler-sfc": "^3.2.45"
+    }
+}
